@@ -1,0 +1,276 @@
+header{
+    background-color: #fc8eac;
+    padding: 30px 0
+    
+}
+
+h1{
+    text-align: center;
+}
+
+body{
+    background-color:#a1d4cf;
+}
+
+.caixa {
+	position: relative;
+	width: 480px;  /* alinhamento horizontal */ 
+	margin: 10px;
+
+
+}
+nav {
+	position: absolute;
+	top: 30px;  /* alinhamento vertical  */ 
+	right: 0;
+
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+
+}
+
+nav a {
+	text-transform: uppercase;
+	color: white;
+	
+	font-size: 22px;
+	text-decoration: none;
+	
+}
+
+nav a:hover {
+	color: firebrick;
+	text-decoration:underline;		
+}
+
+
+#busca {
+    position: absolute;
+	top: 60px;
+	right: 200px;
+   
+}
+
+#txtbusca {
+border:0px solid #222;
+background:#EEE;
+width:260px;
+height:23px;
+margin:0 auto;
+padding:5px 0 5px 5px;
+float:left;  /* posicao do campo*/
+line-height:36px; /* altura da linha*/ 
+}
+
+#btnBusca {
+background:#00cccc;
+position:relative;
+border:0px solid #222;
+color:#FFF; 
+margin:0 auto;
+padding:10px;
+border:0 none;
+font-size:11px;
+font-weight:bold;
+text-transform:uppercase;
+}
+
+#btnBusca:hover {
+background:#99cccc; 
+}
+
+section#home {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 20px;
+    
+
+  }
+
+
+  /*PAGINA*/
+  
+  .home-info {
+    width: 50%;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: justify;
+    color:#0e1f40;
+    font-size: 20px;
+    
+  }
+  
+  .home-info button {
+    border: none;
+    width: 150px;
+    padding: 10px;
+    background-color: #fc8eac;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    opacity: 0.9;
+    border-radius: 5px;
+    
+  }
+  
+  .home-info button a{
+    color: white;
+  }
+  
+  .home-info button:hover{
+    opacity: 1;
+  }
+  
+  .home-img {
+    width: 20%;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .home-img img {
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 10px 10px;
+    border-radius: 50%;
+  }
+  
+  
+
+
+/*votao do contato*/
+
+h3{
+    text-align: center;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    
+    padding: 10px;
+    background-color: #fc8eac;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    opacity: 0.9;
+    border-radius: 5px;
+}
+
+
+#contact {
+    height: 450px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    background-color: 	#a1d4cf;
+  }
+  
+  #contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    width: 100%;
+    padding: 5px 20px;
+  }
+  
+  input, textarea, button {
+    box-shadow: 0 1px 2px #ddd;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    resize: none;
+  }
+  
+  #contact form button {
+    background-color: #3aaf7d; 
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    opacity: 0.9;
+  }
+  
+  #contact form button:hover{
+    opacity: 1;
+  }
+  
+
+  .negrito {
+    font-weight: bolder;
+  }
+
+
+
+  /*rodape*/
+
+
+footer{
+  margin: 15px;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+
+  
+}
+
+body.dark {
+  background: #458E84;
+}
+
+
+
+
+  .checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+  
+  .label {
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1.5);
+  
+  }
+  
+  
+  .label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+  }
+  
+  .checkbox:checked + .label .ball {
+    transform: translateX(24px);
+  }
+  
+  .fa-moon {
+    color: #f1c40f;
+  }
+  
+  .fa-sun {
+    color: #f39c12;
+  }
